@@ -1,0 +1,14 @@
+name = "verycoolrepo"
+packagecount = "2"
+maintainer = "nah"
+fetch-url = "https://repo.example.com/verycoolrepo.git"
+
+[[package]]
+name = "pkg"
+distro = "distro1"
+creation-date = "0.0.0"
+
+[[package]]
+name = "pkg2"
+distro = "distro2"
+creation-date = "0.0.0"
