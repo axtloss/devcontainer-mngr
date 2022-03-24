@@ -5,9 +5,6 @@ use std::io::prelude::*;
 
 pub fn parse_repo() {
     let mut repo_file = String::new();
-    //let mut repo_file_path = String::new();
-    //repo_file_path.push_str(env!("HOME"));
-    //repo_file_path.push_str(format!("{}/.cache/distromgr/repo.toml", env!("HOME")).as_str());
     let mut file = File::open(format!("{}/.cache/distromgr/repo.toml", env!("HOME")).as_str()).unwrap();
     file.read_to_string(&mut repo_file).unwrap();
     let repo_parsed: Value = toml::from_str(&repo_file).unwrap();
